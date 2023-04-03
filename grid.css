@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+/* General Styles & Resets */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Layout & Appearance */
+.mainContainer {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.taskOne div>div {
+    border: 1px dashed #333;
+    font-size: 4rem;
+}
+
+section {
+    padding: 2em 0;
+}
+
+p {
+    margin-bottom: 2em;
+}
+
+.taskThree .grid div {
+    padding: 2em;
+}
+
+.taskOne .container div {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 2em auto;
+}
+
+/*Typography */
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Your Code Here! */
+
+/* TASK ONE */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+
+/* TASK TWO */
+
+.taskTwo .container {
+    display: grid;
+    grid-template-rows: 120px 120px 120px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.item1 {
+    background-color: rgb(257, 87, 20);
+    grid-row: 1/3;
+    grid-column: 1/4;
+}
+
+.item2 {
+    background-color: rgba(232, 170, 20, 0.5);
+    grid-row: 2/4;
+    grid-column: 2/5;
+}
+
+/* TASK THREE */
+
+
+
+
+.one {
+    background-color: #D1495B;
+    grid-area: one;
+}
+
+.two {
+    background-color: #00798C;
+    grid-area: two;
+}
+
+.three {
+    background-color: #EDAE49;
+    grid-area: three;
+}
+
+.four {
+    background-color: #30638E;
+    grid-area: four;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    grid-template-areas: "one one"
+        "two three"
+        "none four";
+}
+
+/* Challenges Adapted from https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grid_skills */
